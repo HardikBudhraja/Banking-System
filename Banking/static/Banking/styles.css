@@ -1,0 +1,88 @@
+body {
+    background-color:rgb(20, 17, 17);
+}
+.navbar_custom{
+    position:fixed; top:0;
+    width:100%;
+    background-color: black;
+}
+#transfer_money{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#transfer_form{
+    background: white;
+    width: 50vw;
+    height: auto;
+    max-width: 50vh;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+    margin-top: 100px;
+}
+
+#transfer_input{
+    width: auto;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-content: center;
+}
+
+#transfer_form select{
+    width : 80%;
+    position: relative;
+    float: center;
+    border: 0px;
+    border-bottom: 1px solid;
+    margin-top: 20px;
+
+}
+
+#transfer_form input[type="number"] {
+    width: 80%;
+    position: relative;
+    color: black;
+    border:none;
+    border-bottom: 1px solid;
+    margin-top: 20px;
+}
+
+#transfer_form input[type="submit"] {
+    color: white;
+    background-color: rgb(17, 0, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#index_background{
+    background-image: url('https://images.unsplash.com/photo-1550565118-3a14e8d0386f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    width: 100%;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type="number"]::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
