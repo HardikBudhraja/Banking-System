@@ -49,7 +49,7 @@ def transfer(request):
 
         if s_id == r_id:
             errors.append("Sender and Recipient are same")
-        elif sender.ballance < amount:
+        elif sender.balance < amount:
             errors.append("Insufficient balance")
         else:
             pass
@@ -57,7 +57,7 @@ def transfer(request):
         if (len(errors) == 1) and errors[0] == "Insufficient balance":
             payment = Transaction()
             payment.sender = sender
-            payment.recipient = recipient
+            payment.reciever = recipient
             payment.amount = amount
             payment.status = False
             payment.save()
@@ -71,11 +71,11 @@ def transfer(request):
                 "errors": errors,
             })
         else:
-            sender.ballance -= amount
-            recipient.ballance += amount
+            sender.balance -= amount
+            recipient.balance += amount
             payment = Transaction()
             payment.sender = sender
-            payment.recipient = recipient
+            payment.reciever = recipient
             payment.amount = amount
             payment.status = True
             payment.save()
